@@ -114,7 +114,7 @@ async function System() {
     })
 
     sock.ev.on('call', async (update) => {
-        const jid = update[0].chatId;
+        const jid = update[0].chatId
         if (global.settings.anticall) {
             return sock.sendMessage(jid, { text: 'Saat ini saya tidak dapat menerima panggilan anda.'})
         }       
