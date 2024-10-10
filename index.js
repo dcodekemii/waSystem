@@ -9,7 +9,7 @@
 const { default: makeWASocket, jidDecode, Browsers, DisconnectReason, useMultiFileAuthState } = require("@whiskeysockets/baileys")
 const readline = require("readline")
 const pino = require("pino")
-require('./system/settings')
+require('./settings')
 
 const question = (text) => {
     const rl = readline.createInterface({
